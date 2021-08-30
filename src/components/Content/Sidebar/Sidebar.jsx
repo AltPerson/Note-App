@@ -1,11 +1,11 @@
-import "./Sidebar.scss"
+import SidebarList from "./SidebarList";
 
 function Sidebar() {
-	return (
-		<div>
-				Sidebar
-		</div>
-	)
+  return (
+    <div className="content-sidebar sidebar">
+      <SidebarList />
+    </div>
+  );
 }
 
-export default Sidebar
+export default Sidebar;

@@ -1,13 +1,14 @@
 import Sidebar from "./Sidebar/Sidebar";
 import WorkSpace from "./Workspace/Workspace";
+import "./Content.scss";
 
 function Content() {
-	return (
-		<>
-		<Sidebar/>
-		<WorkSpace/>	
-		</>
-	)
+  return (
+    <div className="content">
+      <Sidebar />
+      <WorkSpace />
+    </div>
+  );
 }
 
-export default Content
+export default Content;

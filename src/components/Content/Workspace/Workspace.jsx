@@ -1,7 +1,5 @@
-import "./Workspace.scss";
-
-function WorkSpace() {
-  return <div>Work</div>;
+function Workspace() {
+  return <div className="content-workspace">Workspace</div>;
 }
 
-export default WorkSpace;
+export default Workspace;

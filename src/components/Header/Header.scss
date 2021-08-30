@@ -11,6 +11,16 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    outline: none;
+    .disabled {
+      background: grey;
+      cursor: auto;
+      &:hover {
+        &::after {
+          content: none;
+        }
+      }
+    }
     &__btn {
       width: 30px;
       height: 30px;

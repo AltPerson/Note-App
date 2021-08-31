@@ -2,12 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  ol,
+  ul {
+    margin-left: 20px;
+  }
 }
 
 .app {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  width: 100vw;
+  max-width: 1200px;
   margin: 0 auto;
   &-wrapper {
     margin: 50px auto 0;

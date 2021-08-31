@@ -1,7 +1,7 @@
 export const dateArray = [
   {
     id: 0,
-    text: `Super Value
+    text: `Super Value duper mega value 
 	Just another text
 	I don't know
 	`,
@@ -9,7 +9,7 @@ export const dateArray = [
   },
   {
     id: 1,
-    text: `Just an another text
+    text: `Just an another text 	
 	for homies:)
 	`,
     date: "2021-07-30 11:00:22",
@@ -24,7 +24,7 @@ export const dateArray = [
   },
   {
     id: 3,
-    text: `Cool stuff coming soon this text
+    text: `Cool stuff coming soon this text fqwofjwfoqw
 		specially to check it more`,
     date: Date.now(),
   },

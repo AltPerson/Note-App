@@ -22,3 +22,22 @@
     border-radius: 5px;
   }
 }
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bfbfbf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(174, 174, 174);
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(143, 143, 143);
+}

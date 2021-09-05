@@ -3,12 +3,19 @@ function SidebarListItem({
   title = "Title",
   time = "23:44",
   text = "Some text about me",
+  id,
 }) {
-  const textLength = time.length === 5 ? 24 : 17;
+  const [selected, setSelected] = isSelected;
+  const textLength = time.length === 5 ? 29 : 22;
   return (
-    <div className={`list-item ${isSelected && "selected"}`}>
+    <div
+      className={`list-item ${selected.is && selected.id === id && "selected"}`}
+      onClick={() => {
+        setSelected({ is: true, id: id });
+      }}
+    >
       <h4 className="list-item__title">
-        {title.length >= 24 ? title.substr(0, 24) + "..." : title}
+        {title.length >= 37 ? title.substr(0, 37) + "..." : title}
       </h4>
       <span className="list-item__data">{time}</span>
       <span className="list-item__text">

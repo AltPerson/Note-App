@@ -2,7 +2,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 function Renderedarea({ time, text }) {
-  console.log(text);
   return (
     <div className="workspace-renderarea">
       <h5 className="workspace-renderarea__time">

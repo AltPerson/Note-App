@@ -4,7 +4,8 @@
   height: 92%;
   &-sidebar {
     border-right: 1px solid #f0f0f0;
-    height: 100%;
+    height: auto;
+    overflow-y: auto;
     flex: 1 1 30%;
     .selected {
       background-color: #f0f0f0;
@@ -66,7 +67,7 @@
       &__time {
         text-align: center;
         font-size: 11px;
-        margin-top: 10px;
+        margin: 10px 0;
         font-weight: normal;
         color: #8c8c8c;
       }

@@ -2,20 +2,26 @@ import Editarea from "./Editarea";
 import Renderedarea from "./Renderedarea";
 import { useState } from "react";
 import { getPlainText } from "../../../utils/getPlainText";
+import { useContext } from "react";
+import { NotesContext } from "../../../data/Context";
+import Emptyarea from "./Emptyarea";
 
-function Workspace({ textR }) {
-  const [value, setValue] = useState("");
-  const [save, setSave] = useState(false);
-  const test = `1) List\n
-2) List\n
-3) List\n
-# Some value\n
-~~Other Things~~`;
-  return <Renderedarea text={test} time={new Date(Date.now())} />;
+function Workspace() {
+  const { data, isSelected, isEdit } = useContext(NotesContext);
+  const [selected, setSelected] = isSelected;
 
+  const [edit, setEdit] = isEdit;
+
+  const item = data?.filter((item) => item.id === selected.id);
+  item && console.log(item[0]);
   return (
     <div className="content-workspace workspace">
-      <Editarea value={value} setValue={setValue} setSave={setSave} />
+      {edit.is && <Editarea item={item[0]} />}
+      {selected.is ? (
+        <Renderedarea text={item[0].text} time={new Date(item[0].date)} />
+      ) : (
+        <Emptyarea />
+      )}
     </div>
   );
 }

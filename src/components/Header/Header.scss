@@ -32,6 +32,7 @@
       color: white;
       cursor: pointer;
       position: relative;
+      transition: all 0.5s ease;
       &:hover {
         &::after {
           content: "";
@@ -43,7 +44,7 @@
         }
       }
     }
-    &__close {
+    &__delete {
       background: #ff7875;
     }
     &__edit {
@@ -52,6 +53,61 @@
     }
     &__save {
       background: #95de64;
+    }
+    .modal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(174, 174, 174, 0.4);
+      .form {
+        text-align: center;
+        transform: translateY(-50%);
+        border: 2px solid black;
+        padding: 20px;
+        background-color: white;
+        &__title {
+          border-bottom: 1px solid black;
+        }
+        &-buttons {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          &_btn {
+            padding: 10px 20px;
+            margin-right: 10px;
+            outline: none;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.5s ease;
+            &:hover {
+              &::after {
+                content: "";
+                top: 0;
+                left: 0;
+                position: absolute;
+                background: white;
+                opacity: 0.2;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          &__agree {
+            background: #95de64;
+          }
+          &__decline {
+            background: #ff7875;
+          }
+        }
+      }
     }
   }
   &-title {

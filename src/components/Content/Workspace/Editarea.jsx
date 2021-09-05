@@ -1,4 +1,7 @@
-function Editarea({ value, setValue, setSave }) {
+import { useState } from "react";
+
+function Editarea({ item }) {
+  const [value, setValue] = useState(item.text);
   return (
     <div className="workspace-editarea">
       <textarea
@@ -6,7 +9,6 @@ function Editarea({ value, setValue, setSave }) {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button onClick={() => setSave(true)}>Save</button>
     </div>
   );
 }

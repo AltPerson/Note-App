@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
+import { updateNote } from "../../../data/db";
+import { NotesContext } from "../../../data/Context";
 
-function Editarea({ item }) {
-  const [value, setValue] = useState(item.text);
+function Editarea({ item, forEdit }) {
+  const { area } = useContext(NotesContext);
+  const [areaText, setAreaText] = area;
+  const [value, setValue] = useState(forEdit ? item.text : "");
+
+  useEffect(() => {
+    forEdit && updateNote(value, item.id, Date.now());
+  }, [forEdit ? value : ""]);
   return (
     <div className="workspace-editarea">
       <textarea
         className="workspace-editarea__text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
+        value={forEdit ? value : areaText}
+        onChange={(e) => {
+          forEdit ? setValue(e.target.value) : setAreaText(e.target.value);
+        }}
       />
     </div>
   );

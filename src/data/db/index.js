@@ -2,7 +2,7 @@ import Dexie from "dexie";
 
 export const db = new Dexie("listDb");
 db.version(1).stores({
-  notes: "++id, time, text",
+  notes: "++id,text",
 });
 
 export const removeNote = async (id) => {
@@ -10,9 +10,9 @@ export const removeNote = async (id) => {
 };
 
 export const addNote = async (data) => {
-  await db.notes.add({ time: Date.now(), text: data });
+  await db.notes.add({ date: Date.now(), text: data });
 };
 
-export const updateNote = async (data, id) => {
-  await db.notes.update(id, { time: Date.now(), text: data });
+export const updateNote = async (data, id, time) => {
+  await db.notes.update(id, { date: time, text: data });
 };

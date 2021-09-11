@@ -6,7 +6,7 @@ import { useState, useContext, useEffect } from "react";
 function Search() {
   const { data, isSelected } = useContext(NotesContext);
   const [value, setValue] = useState("");
-  const [selected, setSelected] = isSelected;
+  const [, setSelected] = isSelected;
   useEffect(() => {
     if (value === "") {
       setSelected({ is: false, id: null });

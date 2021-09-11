@@ -4,6 +4,9 @@ function SidebarListItem({
   time = "23:44",
   text = "Some text about me",
   id,
+  setSide,
+  isEdit,
+  isCreate,
 }) {
   const [selected, setSelected] = isSelected;
   const textLength = time.length === 5 ? 29 : 22;
@@ -11,7 +14,9 @@ function SidebarListItem({
     <div
       className={`list-item ${selected.is && selected.id === id && "selected"}`}
       onClick={() => {
+        if (isEdit || isCreate) return;
         setSelected({ is: true, id: id });
+        setSide(true);
       }}
     >
       <h4 className="list-item__title">

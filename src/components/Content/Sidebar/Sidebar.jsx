@@ -1,8 +1,8 @@
 import SidebarList from "./SidebarList";
 
-function Sidebar() {
+function Sidebar({ side }) {
   return (
-    <div className="content-sidebar sidebar">
+    <div className={`content-sidebar sidebar ${side ? "hide" : ""}`}>
       <SidebarList />
     </div>
   );

@@ -13,6 +13,7 @@ function App() {
   const [edit, setEdit] = useState({ is: false, id: null });
   const [create, setCreate] = useState(false);
   const [areaText, setAreaText] = useState("");
+  const [side, setSide] = useState(false);
   return (
     <div
       className="app"
@@ -32,6 +33,7 @@ function App() {
             isEdit: [edit, setEdit],
             isCreate: [create, setCreate],
             area: [areaText, setAreaText],
+            isSide: [side, setSide],
           }}
         >
           <Header />

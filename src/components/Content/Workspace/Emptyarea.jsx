@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 function Emptyarea() {
   const { isCreate } = useContext(NotesContext);
-  const [create, setCreate] = isCreate;
+  const [, setCreate] = isCreate;
   return (
     <div className="workspace-emptyarea">
       <IoIosCreate

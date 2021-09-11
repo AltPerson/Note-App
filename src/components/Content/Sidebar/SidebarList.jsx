@@ -5,7 +5,11 @@ import { useContext } from "react";
 import { NotesContext } from "../../../data/Context";
 
 function SidebarList() {
-  const { data, isSelected } = useContext(NotesContext);
+  const { data, isSelected, isSide, isEdit, isCreate } =
+    useContext(NotesContext);
+  const [, setSide] = isSide;
+  const [edit] = isEdit;
+  const [create] = isCreate;
   return (
     <div className="sidebar-list list">
       {data
@@ -17,7 +21,10 @@ function SidebarList() {
             text={getTitleFromText(item.text, false)}
             time={getDateFromItem(item.date)}
             isSelected={isSelected}
+            setSide={setSide}
             id={item.id}
+            isEdit={edit.is}
+            isCreate={create}
           />
         ))}
     </div>

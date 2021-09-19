@@ -9,7 +9,7 @@ function Editarea({ item, forEdit }) {
 
   useEffect(() => {
     forEdit && updateNote(value, item.id, Date.now());
-  }, [forEdit ? value : ""]);
+  }, [forEdit, item?.id, value]);
   return (
     <div className="workspace-editarea">
       <textarea

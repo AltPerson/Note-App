@@ -1,8 +1,8 @@
-import { AiOutlineCheck } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 import { removeNote } from "../../data/db/index";
 
-function DeleteModal({ setIsOpen, selected, setSelected }) {
+function DeleteModal({ setIsOpen, selected, setSelected, setSide, isInit }) {
+  const [init, setInit] = isInit;
   return (
     <div className="modal">
       <div className="modal-form form">
@@ -10,10 +10,13 @@ function DeleteModal({ setIsOpen, selected, setSelected }) {
         <div className="form-buttons">
           <button
             onClick={() => {
-              console.log(selected.id);
               removeNote(selected.id);
               setIsOpen(false);
               setSelected({ is: false, id: null });
+              setSide(false);
+              if (init) {
+                setInit(false);
+              }
             }}
             className="form-buttons_btn form-buttons__agree"
           >

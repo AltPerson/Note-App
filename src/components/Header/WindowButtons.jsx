@@ -1,5 +1,5 @@
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
-import { FiSave } from "react-icons/fi";
+import { FiSave, FiHelpCircle } from "react-icons/fi";
 import { FaList } from "react-icons/fa";
 import { IoIosCreate } from "react-icons/io";
 import { useContext, useState } from "react";
@@ -8,7 +8,7 @@ import DeleteModal from "./DeleteModal";
 import { addNote } from "../../data/db/index";
 
 function WindowButtons() {
-  const { data, isSelected, isEdit, isCreate, area, isSide } =
+  const { data, isSelected, isEdit, isCreate, area, isSide, isInit } =
     useContext(NotesContext);
   const [selected, setSelected] = isSelected;
   const [edit, setEdit] = isEdit;
@@ -27,8 +27,8 @@ function WindowButtons() {
           }`}
           onClick={() => {
             setSide(!side);
-            setSelected({ is: false, id: null });
           }}
+          title="List"
         >
           <FaList />
         </button>
@@ -44,23 +44,35 @@ function WindowButtons() {
             addNote(areaText);
             setAreaText("");
             setCreate(false);
+            setSide(!side);
             return;
           }
+          const id = edit.id;
           setEdit({ is: false, id: null });
+          setSelected({ is: true, id: id });
         }}
+        title="Save"
       >
         <FiSave />
       </button>
       <button
-        disabled={selected.is ? false : edit.is ? true : create ? true : false}
+        disabled={selected.is ? true : edit.is ? true : create ? true : false}
         type="button"
         className={`header-buttons__btn header-buttons__create ${
-          selected.is ? "" : edit.is ? "disabled" : create ? "disabled" : ""
+          selected.is
+            ? "disabled"
+            : edit.is
+            ? "disabled"
+            : create
+            ? "disabled"
+            : ""
         }`}
         onClick={() => {
+          setSide(!side);
           setSelected({ is: false, id: null });
           setCreate(true);
         }}
+        title="Create"
       >
         <IoIosCreate />
       </button>
@@ -73,6 +85,7 @@ function WindowButtons() {
           setEdit({ is: true, id: selected.id });
           setSelected({ is: false, id: null });
         }}
+        title="Edit"
       >
         <AiFillEdit />
       </button>
@@ -90,14 +103,26 @@ function WindowButtons() {
           }
           setIsOpen(true);
         }}
+        title="Delete"
       >
         <AiFillDelete />
       </button>
+      <a
+        className="header-buttons__btn header-buttons__help"
+        href="https://commonmark.org/help/"
+        target="_blank"
+        rel="noreferrer"
+        title="Help"
+      >
+        <FiHelpCircle />
+      </a>
       {isOpen && (
         <DeleteModal
           setIsOpen={setIsOpen}
           selected={selected}
           setSelected={setSelected}
+          setSide={setSide}
+          isInit={isInit}
         />
       )}
     </div>

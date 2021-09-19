@@ -75,6 +75,11 @@
         display: inherit;
       }
     }
+    &__help {
+      margin-left: 10px;
+      font-size: 16px;
+      background: rgb(232, 232, 232);
+    }
     .modal {
       position: absolute;
       top: 0;

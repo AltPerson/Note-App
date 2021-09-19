@@ -11,7 +11,11 @@ function Workspace({ side }) {
   const [edit] = isEdit;
   const [create] = isCreate;
   return (
-    <div className={`content-workspace workspace ${!side ? "hide" : ""}`}>
+    <div
+      className={`content-workspace workspace ${
+        !side && data?.length > 0 ? "hide" : ""
+      }`}
+    >
       {create ? (
         <Editarea forEdit={false} />
       ) : edit.is ? (

@@ -5,7 +5,8 @@ import Header from "./components/Header/Header";
 import { NotesContext } from "./data/Context";
 import { db } from "./data/db/index";
 import { useLiveQuery } from "dexie-react-hooks";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { initRecord } from "./utils/initRecord";
 
 function App() {
   const notesList = useLiveQuery(() => db.notes?.toArray(), []);
@@ -14,6 +15,17 @@ function App() {
   const [create, setCreate] = useState(false);
   const [areaText, setAreaText] = useState("");
   const [side, setSide] = useState(false);
+  const [init, setInit] = useState(true);
+  useEffect(() => {
+    if (notesList !== undefined && notesList.length === 0) {
+      if (!init) {
+        return;
+      }
+      setInit(false);
+      initRecord();
+    }
+    return;
+  }, [notesList, init]);
   return (
     <div
       className="app"
@@ -34,6 +46,7 @@ function App() {
             isCreate: [create, setCreate],
             area: [areaText, setAreaText],
             isSide: [side, setSide],
+            isInit: [init, setInit],
           }}
         >
           <Header />

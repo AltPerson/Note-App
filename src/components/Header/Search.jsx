@@ -13,7 +13,7 @@ function Search() {
       return;
     }
     findWord(value, data, setSelected);
-  }, [value]);
+  }, [value, data, setSelected]);
   return (
     <div className="header-search">
       <FiSearch className="header-search__label" />

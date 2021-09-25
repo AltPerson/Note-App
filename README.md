@@ -2,8 +2,8 @@
 
 ## DESCRIPTION<br>
 
-Task was taken from "blob:https://web.telegram.org/5b668b1a-dfc2-4e60-beb8-44788b3bb3a4"<br>
-SPA which simulates Notepad.<br>
+Task was taken from "https://goldenart.com.ua/assets/files/Тестовое%20задание%20Reactjs.pdf"<br>
+SPA which simulates Notepad<br>
 
 ## USED TECHNIQUES<br>
 

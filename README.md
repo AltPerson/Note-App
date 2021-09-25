@@ -1,30 +1,21 @@
-# Getting Started with Create React App
+# Note App<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## DESCRIPTION<br>
 
-## Available Scripts
+Task was taken from "blob:https://web.telegram.org/5b668b1a-dfc2-4e60-beb8-44788b3bb3a4"<br>
+SPA which simulates Notepad.<br>
 
-In the project directory, you can run:
+## USED TECHNIQUES<br>
 
-### `npm start`
+FRAMEWORK - React<br>
+METHODS - ReactHooks(useState,useEffect,useContext)<br>
+PREPROCESSORS - SCSS<br>
+Libraries - React-icons<br>
+DB - indexDB<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## URL:https://altperson.github.io/noteApp/<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## BRANCHES<br>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+MASTER - Source code of Project<br>
+GH-PAGES - Builded version

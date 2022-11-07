@@ -5,7 +5,7 @@
 Task was taken from "https://goldenart.com.ua/assets/files/Тестовое%20задание%20Reactjs.pdf"<br>
 SPA which simulates Notepad<br>
 
-![image](https://user-images.githubusercontent.com/39427362/200326836-5bef3561-c4eb-44bc-a478-a6a2e5e9cdf8.png)
+![image](https://user-images.githubusercontent.com/39427362/200375199-89144eda-9a24-420b-bb3a-fcea8e35f04a.png)
 
 ## USED TECHNIQUES<br>
 

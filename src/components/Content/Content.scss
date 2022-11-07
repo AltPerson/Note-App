@@ -1,9 +1,11 @@
 .content {
   display: flex;
   width: 100%;
-  height: 92%;
+  height: 94%;
+  background-color: white;
+  padding: 0 5px;
   @media screen and (max-width: 668px) {
-    height: 81%;
+    height: 86%;
   }
   @media screen and (max-width: 568px) {
     .hide {
@@ -68,6 +70,9 @@
   .workspace {
     height: 100%;
     flex: 1 1 70%;
+    overflow: auto;
+    white-space: pre;
+    padding-top: 10px;
     @media screen and (max-width: 568px) {
       flex: 1 1 100%;
     }
@@ -94,14 +99,13 @@
       &__time {
         text-align: center;
         font-size: 11px;
-        margin: 10px 0;
+        margin-bottom: 10px;
         font-weight: normal;
         color: #8c8c8c;
       }
       &__text {
         padding: 0 10px;
         font-size: 16px;
-        word-break: break-word;
         @media screen and (max-width: 768px) {
           font-size: 14px;
           ul,
@@ -118,6 +122,8 @@
       width: 100%;
       height: 100%;
       &__text {
+        overflow-y: hidden;
+        white-space: nowrap;
         resize: none;
         outline: none;
         border: none;

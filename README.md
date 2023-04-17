@@ -3,7 +3,7 @@
 ## DESCRIPTION<br>
 
 Task was taken from "https://goldenart.com.ua/assets/files/Тестовое%20задание%20Reactjs.pdf"<br>
-SPA which simulates Notepad<br>
+Website which simulates Notepad<br>
 
 ![image](https://user-images.githubusercontent.com/39427362/200375377-388de7ce-95ac-4896-8a15-9d93fc6eb215.png)
 

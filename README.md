@@ -6,7 +6,7 @@ Idea was taken from "https://goldenart.com.ua/assets/files/Тестовое%20з
 Note App is website that simulates a simplified notepad from MacOs.<br> 
 It allows users to write a note by using markdown text or simple text.<br> 
 User can save, delete or edit note that saves in indexDB of browser.<br>
-![image](https://user-images.githubusercontent.com/39427362/232711563-61c12203-afe5-441c-88ec-7027a5e1cbd1.png)
+![image](https://user-images.githubusercontent.com/39427362/232711903-a7fceb4f-f37f-4f9d-886b-e939075f586e.png)
 
 ## USED TECHNIQUES<br>
 

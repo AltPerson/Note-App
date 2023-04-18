@@ -1,8 +1,17 @@
 export const getPlainText = (formattedText) => {
   const regEx = /[^a-zA-Z0-9\s\n]/g;
-  const textWithSpaces = formattedText.replace(regEx, "");
   const plainText = [];
 
+  const textWithSpaces = formattedText.replace(regEx, "");
+  const textW = textWithSpaces.split("");
+  const pT = textW.filter((char) => {
+    if (char === "\n" || char === " ") {
+      return;
+    }
+    return char;
+  });
+
+  console.log("RawText", textWithSpaces);
   for (let i = 0; i < textWithSpaces.length; i++) {
     if (i === 0 && textWithSpaces[i] === " ") {
       continue;
@@ -14,5 +23,7 @@ export const getPlainText = (formattedText) => {
       plainText.push(textWithSpaces[i]);
     }
   }
-  return plainText.join("");
+  console.log("PlainText", pT);
+  console.log("PlainHard", plainText);
+  return textWithSpaces;
 };

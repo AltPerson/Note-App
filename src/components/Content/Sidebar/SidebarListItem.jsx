@@ -1,8 +1,8 @@
 function SidebarListItem({
   isSelected,
-  title = "Title",
-  time = "23:44",
-  text = "Some text about me",
+  title = "Empty",
+  time,
+  text = "Write Something here...",
   id,
   setSide,
   isEdit,
@@ -10,6 +10,7 @@ function SidebarListItem({
 }) {
   const [selected, setSelected] = isSelected;
   const textLength = time.length === 5 ? 29 : 22;
+  console.log("Text", text);
   return (
     <div
       className={`list-item ${selected.is && selected.id === id && "selected"}`}
@@ -20,7 +21,7 @@ function SidebarListItem({
       }}
     >
       <h4 className="list-item__title">
-        {title.length >= 37 ? title.substr(0, 37) + "..." : title}
+        {title.length >= 35 ? title.substr(0, 35) + "..." : title}
       </h4>
       <span className="list-item__data">{time}</span>
       <span className="list-item__text">

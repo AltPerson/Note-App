@@ -10,6 +10,7 @@ function SidebarList() {
   const [, setSide] = isSide;
   const [edit] = isEdit;
   const [create] = isCreate;
+  console.log("Data", data);
   return (
     <div className="sidebar-list list">
       {data

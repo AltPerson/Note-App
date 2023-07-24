@@ -3,10 +3,11 @@
 ## DESCRIPTION<br>
 
 Idea was taken from "https://goldenart.com.ua/assets/files/Тестовое%20задание%20Reactjs.pdf"<br>
-Note App is website that simulates a simplified notepad from MacOs.<br> 
+Note App is a SPA that simulates a simplified notepad from MacOs.<br> 
 It allows users to write a note by using markdown text or simple text.<br> 
 User can save, delete or edit note that saves in indexDB of browser.<br>
-![image](https://user-images.githubusercontent.com/39427362/232711903-a7fceb4f-f37f-4f9d-886b-e939075f586e.png)
+![NoteAppPortofilo](https://github.com/AltPerson/noteApp/assets/39427362/6250dd2f-ffdc-496a-83a9-4191af5dc069)
+
 
 ## USED TECHNIQUES<br>
 

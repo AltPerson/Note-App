@@ -6,6 +6,7 @@ Idea was taken from "https://goldenart.com.ua/assets/files/Тестовое%20з
 Note App is a SPA that simulates a simplified notepad from MacOs.<br> 
 It allows users to write a note by using markdown text or simple text.<br> 
 User can save, delete or edit note that saves in indexDB of browser.<br>
+![image](https://github.com/AltPerson/noteApp/assets/39427362/b6a64712-52d9-4cfd-921e-0c42fb42ffd3)
 ![NoteAppPortofilo](https://github.com/AltPerson/noteApp/assets/39427362/6250dd2f-ffdc-496a-83a9-4191af5dc069)
 
 

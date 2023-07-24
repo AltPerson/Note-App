@@ -1,4 +1,4 @@
-import { addNote } from "../data/db/index";
+import { addNote } from '../data/db/index';
 export const initRecord = () => {
   const data = `# TIPS
 ---

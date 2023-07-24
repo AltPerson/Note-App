@@ -1,8 +1,8 @@
-import SidebarListItem from "./SidebarListItem";
-import { getTitleFromText } from "../../../utils/getTitleFromText";
-import { getDateFromItem } from "../../../utils/getDateFromItem";
-import { useContext } from "react";
-import { NotesContext } from "../../../data/Context";
+import SidebarListItem from './SidebarListItem';
+import { getTitleFromText } from '../../../utils/getTitleFromText';
+import { getDateFromItem } from '../../../utils/getDateFromItem';
+import { useContext } from 'react';
+import { NotesContext } from '../../../data/Context';
 
 function SidebarList() {
   const { data, isSelected, isSide, isEdit, isCreate } =
@@ -10,7 +10,6 @@ function SidebarList() {
   const [, setSide] = isSide;
   const [edit] = isEdit;
   const [create] = isCreate;
-  console.log("Data", data);
   return (
     <div className="sidebar-list list">
       {data

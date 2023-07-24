@@ -1,11 +1,12 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 6%;
+  flex: 1 1 6%;
   border-bottom: 1px solid #d9d9d9;
   align-items: center;
   background-color: #d9d9d9;
   padding: 0 10px;
+  text-align: center;
   @media screen and (max-width: 568px) {
     flex-direction: column;
     height: auto;
@@ -44,7 +45,7 @@
       transition: all 0.5s ease;
       &:hover {
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           background: white;
           opacity: 0.2;
@@ -115,7 +116,7 @@
             transition: all 0.5s ease;
             &:hover {
               &::after {
-                content: "";
+                content: '';
                 top: 0;
                 left: 0;
                 position: absolute;

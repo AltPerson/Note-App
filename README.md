@@ -9,7 +9,6 @@ User can save, delete or edit note that saves in indexDB of browser.<br>
 ![image](https://github.com/AltPerson/noteApp/assets/39427362/b6a64712-52d9-4cfd-921e-0c42fb42ffd3)
 ![NoteAppPortofilo](https://github.com/AltPerson/noteApp/assets/39427362/6250dd2f-ffdc-496a-83a9-4191af5dc069)
 
-
 ## USED TECHNIQUES<br>
 
 FRAMEWORK - React<br>

@@ -1,5 +1,5 @@
 export const getPlainText = (formattedText) => {
-  const regEx = /[^a-zA-Z0-9\s\n]/g;
+  const regEx = /[^a-z,A-Z,а-яієїґ,А-ЯҐЄІЇ,0-9\s\n]/g;
   const plainText = [];
 
   const textWithSpaces = formattedText.replace(regEx, '');

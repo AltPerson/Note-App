@@ -19,10 +19,10 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "predeploy": "npm run --openssl-legacy-provider build",
+    "deploy": "gh-pages -d  build"
   },
   "eslintConfig": {
     "extends": [

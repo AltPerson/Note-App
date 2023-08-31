@@ -1,11 +1,11 @@
-import { useState, useEffect, useContext } from "react";
-import { updateNote } from "../../../data/db";
-import { NotesContext } from "../../../data/Context";
+import { useState, useEffect, useContext } from 'react';
+import { updateNote } from '../../../data/db';
+import { NotesContext } from '../../../data/Context';
 
 function Editarea({ item, forEdit }) {
   const { area } = useContext(NotesContext);
   const [areaText, setAreaText] = area;
-  const [value, setValue] = useState(forEdit ? item.text : "");
+  const [value, setValue] = useState(forEdit ? item.text : '');
 
   useEffect(() => {
     forEdit && updateNote(value, item.id, Date.now());

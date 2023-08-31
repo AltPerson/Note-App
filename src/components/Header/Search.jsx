@@ -1,14 +1,14 @@
-import { FiSearch } from "react-icons/fi";
-import { NotesContext } from "../../data/Context";
-import { findWord } from "../../utils/findWord";
-import { useState, useContext, useEffect } from "react";
+import { FiSearch } from 'react-icons/fi';
+import { NotesContext } from '../../data/Context';
+import { findWord } from '../../utils/findWord';
+import { useState, useContext, useEffect } from 'react';
 
 function Search() {
   const { data, isSelected } = useContext(NotesContext);
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
   const [, setSelected] = isSelected;
   useEffect(() => {
-    if (value === "") {
+    if (value === '') {
       setSelected({ is: false, id: null });
       return;
     }

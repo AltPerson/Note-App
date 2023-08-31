@@ -24,8 +24,8 @@ function Editarea({ item, forEdit }) {
         value={forEdit ? value : areaText}
         onFocus={(e) =>
           e.currentTarget.setSelectionRange(
-            e.currentTarget.value.length,
-            e.currentTarget.value.length,
+            e.currentTarget.value.trimEnd().length,
+            e.currentTarget.value.trimEnd().length,
           )
         }
         onChange={(e) => {

@@ -18,7 +18,7 @@ PREPROCESSORS - SCSS<br>
 Libraries - React-icons<br>
 DB - indexDB<br>
 
-## URL:https://altperson.github.io/noteApp/<br>
+## URL:https://altperson.github.io/Note-App/<br>
 
 ## BRANCHES<br>
 

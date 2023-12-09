@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/noteApp/static/css/main.ad9dae03.chunk.css",
-    "main.js": "/noteApp/static/js/main.24044292.chunk.js",
-    "main.js.map": "/noteApp/static/js/main.24044292.chunk.js.map",
-    "runtime-main.js": "/noteApp/static/js/runtime-main.bdd3621d.js",
-    "runtime-main.js.map": "/noteApp/static/js/runtime-main.bdd3621d.js.map",
-    "static/js/2.ac2afc30.chunk.js": "/noteApp/static/js/2.ac2afc30.chunk.js",
-    "static/js/2.ac2afc30.chunk.js.map": "/noteApp/static/js/2.ac2afc30.chunk.js.map",
-    "index.html": "/noteApp/index.html",
-    "static/css/main.ad9dae03.chunk.css.map": "/noteApp/static/css/main.ad9dae03.chunk.css.map",
-    "static/js/2.ac2afc30.chunk.js.LICENSE.txt": "/noteApp/static/js/2.ac2afc30.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/noteApp/static/media/bg.a1dd8fee.jpg"
+    "main.css": "/Note-App/static/css/main.2873a8c6.chunk.css",
+    "main.js": "/Note-App/static/js/main.24044292.chunk.js",
+    "main.js.map": "/Note-App/static/js/main.24044292.chunk.js.map",
+    "runtime-main.js": "/Note-App/static/js/runtime-main.c20dcd78.js",
+    "runtime-main.js.map": "/Note-App/static/js/runtime-main.c20dcd78.js.map",
+    "static/js/2.ac2afc30.chunk.js": "/Note-App/static/js/2.ac2afc30.chunk.js",
+    "static/js/2.ac2afc30.chunk.js.map": "/Note-App/static/js/2.ac2afc30.chunk.js.map",
+    "index.html": "/Note-App/index.html",
+    "static/css/main.2873a8c6.chunk.css.map": "/Note-App/static/css/main.2873a8c6.chunk.css.map",
+    "static/js/2.ac2afc30.chunk.js.LICENSE.txt": "/Note-App/static/js/2.ac2afc30.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/Note-App/static/media/bg.a1dd8fee.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bdd3621d.js",
+    "static/js/runtime-main.c20dcd78.js",
     "static/js/2.ac2afc30.chunk.js",
-    "static/css/main.ad9dae03.chunk.css",
+    "static/css/main.2873a8c6.chunk.css",
     "static/js/main.24044292.chunk.js"
   ]
 }

@@ -2,7 +2,6 @@
 
 ## DESCRIPTION<br>
 
-Idea was taken from "https://goldenart.com.ua/assets/files/Тестовое%20задание%20Reactjs.pdf"<br>
 Note App is a SPA that simulates a simplified notepad from MacOs.<br> 
 It allows users to write a note by using markdown text or simple text.<br> 
 User can save, delete or edit note that saves in indexDB of browser.<br>
